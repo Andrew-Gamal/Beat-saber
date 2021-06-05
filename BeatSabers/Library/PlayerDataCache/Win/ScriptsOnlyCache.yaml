@@ -19,10 +19,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -66,17 +64,17 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11362}
+    - Class: 114
+      Script: {instanceID: 11474}
     - Class: 114
       Script: {instanceID: 11476}
     - Class: 114
-      Script: {instanceID: 11478}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11518}
-    - Class: 114
-      Script: {instanceID: 11812}
+      Script: {instanceID: 11810}
     - Class: 114
       Script: {instanceID: 11904}
     - Class: 114
@@ -96,19 +94,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12802}
     - Class: 114
-      Script: {instanceID: 12966}
+      Script: {instanceID: 12964}
     - Class: 114
-      Script: {instanceID: 13078}
+      Script: {instanceID: 13076}
     - Class: 114
-      Script: {instanceID: 13178}
+      Script: {instanceID: 13176}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 13190}
     - Class: 114
-      Script: {instanceID: 13208}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 55878}
+      Script: {instanceID: 21260}
     - Class: 114
-      Script: {instanceID: 55880}
+      Script: {instanceID: 21262}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -116,6 +114,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -161,11 +161,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11476}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11830}
     - Class: 114
       Script: {instanceID: 11904}
     - Class: 114
@@ -183,9 +183,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12802}
     - Class: 114
-      Script: {instanceID: 13178}
-    - Class: 114
-      Script: {instanceID: 23202}
+      Script: {instanceID: 13176}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -361,6 +359,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 1124cdf9ebfc5890a5e8432c2c1d791b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIcontroler
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -427,7 +431,7 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
-      Hash: 8b9b484b112a709fe7a48f6ad906d620
+      Hash: 2e842890a7d618da8ee55c5403b31a26
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -439,7 +443,7 @@ ScriptsOnlyBuild:
     className: TMP_Asset
   - hash:
       serializedVersion: 2
-      Hash: 4f086271b297b6b1204c8d56001c48e7
+      Hash: a467d76cb45cedd77ae71fb5e35fa1c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cube
@@ -685,12 +689,6 @@ ScriptsOnlyBuild:
     className: VertexShakeB
   - hash:
       serializedVersion: 2
-      Hash: 876057b35445176749b96af771922ad5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Explosion
-  - hash:
-      serializedVersion: 2
       Hash: 5bb0c23ac2810973880e592724a69354
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -851,12 +849,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 19469ffc7d183b9134f84d8b28f88a6d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIcontroler
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity

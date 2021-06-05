@@ -10,18 +10,26 @@ public class UIcontroler : MonoBehaviour
     [SerializeField] GameObject SconePanel;
     [SerializeField] TMP_Text ScoreText;
 
-    float currentTime;
-    float StartingTime;
+    float currentTime=0;
+    float StartingTime=0;
 
     [SerializeField] Saber blueSaber;
     [SerializeField] Saber RedSaber;
 
 
-    [SerializeField] Text CountdownTimer;
+    [SerializeField] TMP_Text CountdownTimer;
     // Start is called before the first frame update
     void Start()
     {
-        StartingTime = PlayerPrefs.GetFloat("Timer");
+        StartingTime = PlayerPrefs.GetInt("Timer");
+        if (StartingTime == 0)
+        {
+            StartingTime = 30;
+        }
+        if (StartingTime == 1)
+        {
+            StartingTime = 60;
+        }
         currentTime = StartingTime;
         Time.timeScale = 1.0f;
     }
