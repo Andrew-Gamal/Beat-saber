@@ -10,7 +10,6 @@ public class Menu : MonoBehaviour
     private static Menu _menu;
     public static Menu Instance => _menu;
 
-    float SpeedValue;
     float SpeedValueEasy = 50f;
     float SpeedValueHard = 100f;
     [SerializeField] Slider SpeedSlider;
@@ -18,7 +17,7 @@ public class Menu : MonoBehaviour
     float output;
     float timer1 = 30;
     float timer2 = 60;
-    [SerializeField] TMP_Dropdown val;
+    [SerializeField] TMP_Dropdown TimeMenuVal;
     void Awake()
     {
         _menu = this;
@@ -26,7 +25,7 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        SpeedSlider.onValueChanged.AddListener(delegate { SpeedValueChangeCheck(); });
+       // SpeedSlider.onValueChanged.AddListener(delegate { SpeedValueChangeCheck(); });
         SpeedSlider.value = PlayerPrefs.GetFloat("LevelSpeed");
         output= PlayerPrefs.GetFloat("Timer");
     }
@@ -43,23 +42,23 @@ public class Menu : MonoBehaviour
         //Debug.Log(SpeedSlider.value);
         if(SpeedSlider.value == 1)
         {
-            SpeedValue = SpeedValueEasy;
+            SpeedSlider.value = SpeedValueEasy;
         }
         if(SpeedSlider.value == 2)
         {
-            SpeedValue = SpeedValueHard;
+            SpeedSlider.value = SpeedValueHard;
         }
-        PlayerPrefs.SetFloat("LevelSpeed", SpeedValue);
-        return SpeedValue;
+        PlayerPrefs.SetFloat("LevelSpeed", SpeedSlider.value);
+        return SpeedSlider.value;
     }
 
     public float TimerValue()
     {
-        if (val.value == 0)
+        if (TimeMenuVal.value == 0)
         {
             output = timer1;
         } 
-        if (val.value == 1)
+        if (TimeMenuVal.value == 1)
         {
             output = timer2;
         }

@@ -1687,7 +1687,7 @@ MonoBehaviour:
   - {fileID: 3185855152265388112, guid: ecacc57cdcafb784fa4b45f6f6362f3d, type: 3}
   points:
   - {fileID: 1750977774}
-  Beat: 2
+  Beat: 1
 --- !u!4 &1629626779
 Transform:
   m_ObjectHideFlags: 0

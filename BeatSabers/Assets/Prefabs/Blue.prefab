@@ -96,6 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubeSlicedPrefab: {fileID: 1735082793375729282, guid: 14ffed7722b17514f940e4bf79c01330,
     type: 3}
+  SpeedValueEasy: 5
+  SpeedValueHard: 15
 --- !u!54 &7488113793339895561
 Rigidbody:
   m_ObjectHideFlags: 0

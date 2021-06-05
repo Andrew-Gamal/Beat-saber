@@ -9,6 +9,9 @@ public class Cube : MonoBehaviour
     Rigidbody rb;
     [SerializeField] GameObject cubeSlicedPrefab;
 
+    [SerializeField]float SpeedValueEasy = 5f;
+    [SerializeField]float SpeedValueHard = 10f;
+
     private static Cube _Cube;
     public static Cube Instance => _Cube;
 
@@ -26,6 +29,14 @@ public class Cube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (speedfromUser == 1)
+        {
+            speedfromUser = SpeedValueEasy;
+        }
+        if (speedfromUser == 2)
+        {
+            speedfromUser = SpeedValueHard;
+        }
         transform.position += Time.deltaTime * (-transform.right) * (CubeSpeed * speedfromUser);
     }
 
