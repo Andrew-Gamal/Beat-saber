@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8685655219699473235}
   m_Layer: 9
   m_Name: Red
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,11 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c48d796be72ef14ba8d25c6f8cb9041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeSize: 0.5
-  cubesInRow: 1
-  explosionForce: 10
-  explosionRadius: 0.5
-  explosionUpward: 0.4
+  cubeSlicedPrefab: {fileID: 1735082793375729282, guid: 14ffed7722b17514f940e4bf79c01330,
+    type: 3}
 --- !u!54 &8474034817034833595
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -123,7 +120,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3185855152265388112}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2529034444110355202}
   m_Layer: 0
   m_Name: Blue Saber
-  m_TagString: Untagged
+  m_TagString: Saber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

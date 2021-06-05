@@ -10,16 +10,9 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float Beat = (60 / 105) * 2;
     private float Timer;
 
-    float currentTime;
-    float StartingTime;
-
-    [SerializeField] Text CountdownTimer;
-    
-    // Start is called before the first frame update
+     // Start is called before the first frame update
     void Start()
     {
-        StartingTime = Menu.Instance.TimerValue();
-        currentTime = StartingTime;
     }
 
     // Update is called once per frame
@@ -34,20 +27,5 @@ public class Spawner : MonoBehaviour
         }
         Timer += Time.deltaTime;
 
-        //Timer Text Cont Down
-        currentTime -= 1 * Time.deltaTime;
-        CountdownTimer.text = currentTime.ToString("00.00");
-
-        if (currentTime <= 0)
-        {
-            currentTime = 0;
-            if (Time.timeScale == 1.0)
-                Time.timeScale = 0.0f;
-
-        }
-        else
-        {
-            Time.timeScale = 1.0f;
-        }
     }
 }
