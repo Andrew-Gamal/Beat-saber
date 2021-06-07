@@ -7,8 +7,9 @@ using TMPro;
 
 public class Menu : MonoBehaviour
 {
-    private static Menu _menu;
-    public static Menu Instance => _menu;
+    //private static Menu _menu;
+    //public static Menu Instance => _menu;
+    public static Menu Instance = null;
 
     float SpeedValueEasy = 50f;
     float SpeedValueHard = 100f;
@@ -17,9 +18,18 @@ public class Menu : MonoBehaviour
     int timer1 = 30;
     int timer2 = 60;
     [SerializeField] TMP_Dropdown TimeMenuVal;
-    void Awake()
+    private void Awake()
     {
-        _menu = this;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+       // DontDestroyOnLoad(gameObject);
     }
     // Start is called before the first frame update
     private void Start()

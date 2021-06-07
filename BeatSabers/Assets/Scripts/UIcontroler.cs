@@ -15,6 +15,7 @@ public class UIcontroler : MonoBehaviour
 
     [SerializeField] Saber blueSaber;
     [SerializeField] Saber RedSaber;
+    [SerializeField] AudioSource MusicClip;
 
 
     [SerializeField] TMP_Text CountdownTimer;
@@ -58,6 +59,7 @@ public class UIcontroler : MonoBehaviour
     {
         SconePanel.SetActive(true);
         ScoreText.text = (blueSaber.count() + RedSaber.count()).ToString();
+        MusicClip.Stop();
       //  Debug.Log(Saber.Instance.count().ToString());
     }
 
